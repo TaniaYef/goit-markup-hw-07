@@ -1,0 +1,133 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+.site-nav > .item {
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 8px;
+  background-color: var(--accent-text-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.auth-nav {
+  display: flex;
+  align-items: center;
+}
+
+.registration {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.icon-mt {
+  margin-top: 32px;
+  margin-right: 10px;
+  fill: var(--content-text-color);
+}
+
+.item > .icon {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30;
+}
+.auth-nav > .item + .item {
+  margin-left: 50px;
+}
+.auth-nav > .mail-tel {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link-logo {
+  margin-right: 93px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--accent-text-color);
+}
+.logo-b {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+.mail-tel {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--content-text-color);
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth-nav .mail-tel:hover,
+.auth-nav .mail-tel:focus {
+  color: var(--accent-text-color);
+}
+.auth-nav .mail-tel:hover .icon-mt,
+.auth-nav .mail-tel:focus .icon-mt {
+  fill: var(--accent-text-color);
+}
+
+.section {
+  padding-top: 94px;
+}

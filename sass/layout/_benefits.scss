@@ -1,0 +1,32 @@
+.benefits {
+  display: none;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+.container-benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-benefits .item {
+  max-width: 270px;
+}
+.container-benefits .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.benefits-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--content-text-color);
+}
