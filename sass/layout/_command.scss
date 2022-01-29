@@ -1,4 +1,9 @@
-.command-name {
+.command {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.command__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -6,32 +11,24 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.section-services,
-.section-com {
-  padding-bottom: 94px;
-}
 
-.command {
-  background-color: #f5f4fa;
-}
-
-.container-command > .item {
+.command-list > .command-list__item {
   background-color: #ffffff;
   width: 270px;
 }
-.container-command {
+.command-list {
   display: flex;
 }
-.container-command .item:not(:last-child) {
+.command-list .command-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.container-command .item {
+.command-list .command-list__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: hidden;
 }
-.crewman {
+.command-list__crewman {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -39,7 +36,7 @@
   margin-top: 30px;
   text-align: center;
 }
-.crewman-specification {
+.command-list__specification {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -53,11 +50,11 @@
   display: flex;
   justify-content: center;
 }
-.social-network-icon + .social-network-icon {
+.social-network__item + .social-network__item {
   margin-left: 10px;
 }
 
-.item-icon {
+.social-network__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,8 +69,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-icon:hover,
-.item-icon:focus {
+.social-network__link:hover,
+.social-network__link:focus {
   fill: #ffffff;
   background-color: var(--accent-text-color);
 }
