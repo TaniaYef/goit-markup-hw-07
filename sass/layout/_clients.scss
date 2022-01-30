@@ -9,6 +9,7 @@
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 94px;
 }
 .clients-list__link {
@@ -24,8 +25,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__icon:hover,
-.clients-list__icon:focus {
-  fill: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+.clients-list__icon {
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+  }
 }

@@ -15,11 +15,16 @@
   display: flex;
 }
 
-.services-list .services-list__item:not(:last-child) {
-  margin-right: 30px;
+.services-list {
+  .services-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.services-list > .services-list__link {
-  display: block;
+
+.services-list {
+  .services-list__link {
+    display: block;
+  }
 }
 
 .services-list__item {
