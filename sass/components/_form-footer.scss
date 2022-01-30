@@ -1,6 +1,7 @@
 .container-footer-subscribe {
   margin-left: 105px;
 }
+
 .footer-subscribe__label {
   display: flex;
   font-style: normal;
@@ -46,8 +47,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-footer:hover,
-.button-footer:focus {
+.footer-subscribe__button:hover,
+.footer-subscribe__button:focus {
   background-color: #1c89e2;
 }
 
