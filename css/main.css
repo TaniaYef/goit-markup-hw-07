@@ -294,7 +294,7 @@ button {
   margin-right: 30px;
 }
 
-.services-list > .services-list__link {
+.services-list .services-list__link {
   display: block;
 }
 
@@ -760,6 +760,7 @@ img {
 
 .agreement {
   color: var(--accent-text-color);
+  margin-left: 5px;
 }
 
 .check-b span {
